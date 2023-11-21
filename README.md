@@ -9,11 +9,11 @@ This Python script utilizes the VLC library and Tkinter to create a simple media
 
 ## Features
 
-- Play (p/space), pause (p/space)
-- Adjust subtitles with arrow keys (<Up>/<Down>)
-- Jump forward or backward in 15-second intervals (<Right>/<Left>)
-- Resume playback from a previously stopped position for the specific movie file (r)
-- Fullscreen mode (double-click or press 'f')
+- Play/Pause movie
+- Adjust subtitles with arrow keys
+- Jump forward or backward in 15-second intervals
+- Resume playback from a previously stopped position for the specific movie file
+- Fullscreen mode
 - Time tracking with historical data recorded in `movie_history.txt`
 
 ## Installation
