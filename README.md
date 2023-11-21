@@ -1,4 +1,4 @@
-# Media_player_with_adjustable_timestamps_for_subtitles
+# Media player with adjustable timestamps for subtitles
 Media player with adjustable timestamps for the subtitles. A key feature is that timestamps for subtitles can be adjusted while the video continues to play.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
