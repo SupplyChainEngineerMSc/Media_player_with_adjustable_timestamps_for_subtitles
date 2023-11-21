@@ -80,8 +80,7 @@ class VLCPlayer:
         new_time_seconds = time_str_to_seconds(new_time)
 
         self.set_time(new_time_seconds*1000)
-        print("ny tid er: ", new_time_seconds*1000)
-        print("type: ", type(new_time_seconds))
+        print("new time is: ", new_time_seconds*1000)
         self.start_player()
 
     def jump_forward(self):
@@ -110,7 +109,7 @@ class VLCPlayer:
         elapsed_time = self.media_player.get_time() / 1000  # Convert milliseconds to seconds
         formatted_time = time.strftime('%H:%M:%S', time.gmtime(elapsed_time))
         # Append filename and elapsed time to the text file
-        movie_history_path = r"C:\Users\jacko\OneDrive\Skrivebord\movie_history.txt"
+        movie_history_path = r"movie_history.txt"
         with open(movie_history_path, 'a', encoding='utf-8') as history_file:
             history_file.write(f"Filename: {self.video_path}, Elapsed Time: {formatted_time}\n")
         print(f"Elapsed Time: {time.strftime('%H:%M:%S', time.gmtime(elapsed_time))}")
@@ -179,12 +178,6 @@ def on_up_arrow(event):
 def on_down_arrow(event):
     player.adjust_subtitles(-250)
 
-def increase10_button(event):
-    player.adjust_subtitles(10000)
-
-def decrease10_button(event):
-    player.adjust_subtitles(-10000)
-	
 
 def on_right_arrow(event):
     player.jump_forward()
@@ -221,8 +214,6 @@ root.bind("<Down>", on_down_arrow)
 root.bind("<Right>", on_right_arrow)
 root.bind("<Left>", on_left_arrow)
 
-root.bind("<j>", increase10_button)
-root.bind("<m>", decrease10_button)
 
 root.bind("<r>", resume_button)
 
