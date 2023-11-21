@@ -1,5 +1,5 @@
 # Media_player_with_adjustable_timestamps_for_subtitles
-Media player with adjustable timestamps for the subtitles.
+Media player with adjustable timestamps for the subtitles. A key feature is that timestamps for subtitles can be adjusted while the video continues to play.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -10,8 +10,8 @@ This Python script utilizes the VLC library and Tkinter to create a simple media
 ## Features
 
 - Play/Pause movie
-- Adjust subtitles with arrow keys
-- Jump forward or backward in 15-second intervals
+- Adjust time of subtitles with arrow keys
+- Jump forward or backward in playtime in 15-second intervals
 - Resume playback from a previously stopped position for the specific movie file
 - Fullscreen mode
 - Time tracking with historical data recorded in `movie_history.txt`
@@ -27,6 +27,7 @@ https://github.com/SupplyChainEngineerMSc/Media_player_with_adjustable_timestamp
 
 pip install python-vlc
 
+3. Have the two Python codes located in the same folder
 
 ## Usage
 1. Launch the script and select a video file and subtitle file when prompted.
